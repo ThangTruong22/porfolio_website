@@ -1,0 +1,710 @@
+body {
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+:root {
+  --height: 60px;
+  --font-family: "Libre Franklin";
+  --background: black;
+  --font-size-h1-big: 50px;
+  --padding: 50px 120px 75px;
+  --padding-footer: 50px 120px 0;
+}
+
+.topnav {
+  background-color: var(--background);
+  height: var(--height);
+  position: relative;
+  padding: 20px 100px 30px;
+}
+
+.left-part-nav {
+  float: left;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.middle-part-nav {
+  float: right;
+  display: flex;
+  position: relative;
+  left: -50%;
+  text-align: left;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.right-part-nav {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.left-part-nav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.left-part-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  padding: 120px;
+  gap: 30px;
+  background-color: var(--background);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner .left-part {
+  font-family: var(--font-family);
+  color: white;
+  flex: 2 1 0;
+}
+
+.banner .right-part {
+  flex: 1 1 0;
+}
+
+.banner .left-part h1 {
+  font-family: var(--font-family);
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+.banner .left-part p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 39px;
+}
+
+.banner .left-part a {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px 10px;
+  border-radius: 5px;
+}
+
+.banner .left-part i {
+  margin-left: 20px;
+}
+
+.banner .left-part a:hover {
+  background-color: #2c3333;
+  color: #ecf2ff;
+  transform: translateY(-5px);
+}
+
+.ability-section {
+  background-color: var(--background);
+  padding: 120px 120px 0;
+}
+
+.inside-ability-section {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 61px 32px 72px;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  align-items: center;
+}
+
+.small-skill-section {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.small-skill-section h3 {
+  text-decoration: none;
+  padding: 30px;
+  text-align: center;
+  /* border: 1px solid #ffffff; */
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: auto;
+}
+.small-skill-section img {
+  border-radius: 50%;
+}
+
+.experiences-section {
+  background-color: black;
+  color: white;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.experiences-section h1,
+#skill h1,
+#personal-project h1,
+#awards h1 {
+  font-size: var(--font-size-h1-big);
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+#vietalk-experience,
+#sta-experience {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.work-experience-left {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 20px 30px 100px;
+}
+
+.work-experience-left h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0 5px;
+}
+
+.work-experience-left h3 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0 5px;
+}
+
+.work-experience-left li {
+  font-size: 20px;
+  margin-top: 30px;
+  line-height: 35px;
+}
+
+.work-experience-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sta-experience-right-cover {
+  background-image: url("images/sta.png");
+  min-height: 368px;
+  display: flex;
+  /* min-width: 867px; */
+  background-repeat: no-repeat;
+  background-size: center center;
+}
+
+.vietalk-experience-right-cover {
+  background-image: url("images/vietalk-bg-img-2.png");
+  min-height: 368px;
+  background-size: cover;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: center center;
+  /* min-width: 867px; */
+}
+
+.work-experience-right-cover_logo-text {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.work-experience-right-cover_logo-text .inside-cover-logo-text {
+  display: flex;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+}
+
+.work-experience-right_project {
+  border: 1px solid white;
+  padding: 10px 30px 20px;
+}
+
+.work-experience-right_project h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.work-experience-right_project-tag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.work-experience-right_project p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.work-experience-right_project a {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 7.5px 5px;
+  border-radius: 5px;
+}
+
+.tag-1 {
+  background-color: #bf5700;
+}
+.tag-2 {
+  background-color: #0a5b9f;
+}
+.tag-3 {
+  background-color: #ff8b13;
+}
+
+.tag-4 {
+  background-color: #13005a;
+}
+
+.tag-5 {
+  background-color: #0f4d92;
+}
+
+/* .work-experience,
+.personal-project-section-outside {
+  display: none;
+} */
+
+/* CSS for button*/
+#sta-experience-button,
+#vietalk-experience-button,
+#get-done-task-button {
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 5px 35px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: #03001c;
+  color: white;
+  border: 1px solid white;
+}
+
+#sta-experience-button:hover,
+#vietalk-experience-button:hover,
+#get-done-task-button:hover,
+#sta-experience-button:focus,
+#vietalk-experience-button:focus,
+#get-done-task-button:focus {
+  /* background-color: #03001c;
+  color: white;
+  border: 1px solid white; */
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+#personal-project {
+  padding: var(--padding);
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#personal-project-section-outside {
+  padding: 20px 50px 50px;
+  border: 1px solid white;
+  color: white;
+}
+.personal-project-section {
+  background-color: var(--background);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+
+.personal-project-section img {
+  border-radius: 5px;
+  max-width: 300px;
+}
+.personal-project-section h1 {
+  font-size: var(--font-size-h1-big);
+  font-weight: bold;
+}
+
+.project-left-part {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding-right: 10px;
+}
+
+.project-left-part h4 {
+  font-size: 22px;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  line-height: 60px;
+}
+
+.personal-project-tag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.personal-project-tag a {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 10px 20px 10px;
+}
+
+.personal-project-tag a:hover,
+.work-experience-right_project-tag a:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  /* box-shadow: 0px 3px 0px 1px #d5b4b4; */
+  transition: all 0.2s ease;
+}
+
+.project-left-part li {
+  font-size: 20px;
+  margin-top: 30px;
+  line-height: 35px;
+}
+
+.project-right-part {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 100px;
+}
+
+.extra-info-img {
+  display: flex;
+}
+
+/* .project-right-part img {
+  margin-bottom: 100px;
+} */
+
+#skill {
+  background-color: var(--background);
+  color: white;
+  padding: var(--padding);
+}
+
+.skill-logo {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--background);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 75px 40px;
+  margin-top: 40px;
+}
+
+.skill-logo img {
+  height: 100px;
+  width: auto;
+}
+
+#awards {
+  background-color: var(--background);
+  padding: var(--padding);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.awards-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 75px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.awards-section img {
+  width: auto;
+  height: 100px;
+}
+
+#footer {
+  background-color: var(--background);
+  display: flex;
+  padding: var(--padding-footer);
+}
+
+.footer-left {
+  display: flex;
+  flex: 1 1 0;
+}
+.footer-right {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+}
+
+.quote {
+  background-color: #fefcf3;
+  color: black;
+  padding: 10px 15px 5px;
+  border-radius: 10px;
+}
+
+.quote h4 {
+  display: flex;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+.quote h5 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* #sta-experience {
+  display: none;
+} */
+
+#sta-experience,
+#vietalk-experience,
+#personal-project-section-outside {
+  opacity: 0;
+  height: 0;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+}
+
+/* #sta-experience,
+.vietalk-experience,
+.personal-project-section-outside {
+  display: none;
+} */
+
+@media only screen and (min-width: 1500px) {
+  .topnav {
+    padding: 20px 200px 30px;
+  }
+  .banner,
+  .ability-section,
+  .experiences-section,
+  #personal-project,
+  #skill,
+  #awards,
+  #footer {
+    padding: 20px 220px 30px;
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .topnav {
+    padding: 20px 250px 30px;
+  }
+  .banner,
+  .ability-section,
+  .experiences-section,
+  #personal-project,
+  #skill,
+  #awards,
+  #footer {
+    padding: 20px 270px 30px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #sta-experience,
+  #vietalk-experience {
+    flex-direction: column-reverse;
+  }
+  #personal-project-section {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .inside-ability-section,
+  .personal-project-section {
+    justify-content: center;
+    flex-direction: column;
+  }
+  #footer {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 600px) and (max-width: 1100px) {
+  .middle-part-nav {
+    left: revert;
+    text-align: left;
+    justify-content: left;
+  }
+  .right-part-nav {
+    display: none;
+  }
+
+  .project-right-part {
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+}
+
+/* mobile screen */
+
+@media only screen and (max-width: 650px) {
+  .topnav,
+  #banner,
+  .ability-section,
+  .experiences-section,
+  #personal-project,
+  #skill,
+  #awards,
+  #footer {
+    padding: 20px 50px 20px;
+  }
+
+  #banner {
+    flex-direction: column;
+  }
+  .middle-part-nav {
+    left: revert;
+    text-align: left;
+    justify-content: left;
+  }
+  .right-part-nav {
+    display: none;
+  }
+
+  #banner img {
+    width: 300px;
+  }
+  #banner h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #banner p {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .banner .left-part a {
+    font-size: 15px;
+  }
+
+  .inside-ability-section img {
+    width: 200px;
+  }
+  .inside-ability-section a {
+    font-size: 20px;
+  }
+  /* .experiences-section h4 {
+    line-height: 40px;
+  } */
+
+  #personal-project-section-outside {
+    padding: 20px 15px 20px;
+  }
+  #personal-project-section-outside img {
+    width: 200px;
+  }
+  /* .project-right-part img,
+  .extra-info img {
+    margin-bottom: 30px;
+  } */
+
+  .extra-info-img {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .project-right-part {
+    gap: 30px;
+  }
+
+  #awards img {
+    width: 300px;
+    height: auto;
+  }
+
+  .skill-logo {
+    gap: 35px 25px;
+  }
+
+  #sta-experience-button,
+  #vietalk-experience-button,
+  #get-done-task-button {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
